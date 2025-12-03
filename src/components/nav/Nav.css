@@ -26,6 +26,20 @@ nav {
   .logo {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-heading1);
+    overflow: hidden;
+
+    .letters {
+      position: relative;
+      left: -12ch;
+      transition: left 1s ease-in-out;
+    }
+
+    &:hover {
+      .letters {
+        position: relative;
+        left: 0;
+      }
+    }
   }
 
   ul {
@@ -38,18 +52,23 @@ nav {
     .nav-links {
       font-size: var(--font-size-heading3);
       color: #b3b3b3;
+      perspective: 10px;
+      transition: transform 0.1s ease-in-out;
+
+      &:hover {
+        transform: translateY(-5px);
+        &:active {
+          transform: scale(0.95);
+        }
+      }
 
       a {
         text-decoration: none;
+        perspective: 10px;
       }
 
       a:visited {
         color: #fff;
-      }
-
-      a:active {
-        color: red; /* Color when the link is being clicked */
-        transform: translateY(2em);
       }
     }
   }

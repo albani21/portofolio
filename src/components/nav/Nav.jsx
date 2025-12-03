@@ -12,7 +12,20 @@ function Nav() {
         href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap"
         rel="stylesheet"></link>
       <nav>
-        <h2 className="logo">Alban Misimi</h2>
+        <h2 className="logo">
+          <spam className="logo-start">A</spam>
+          <spam className="letters">l</spam>
+          <spam className="letters">b</spam>
+          <spam className="letters">a</spam>
+          <spam className="letters">n</spam>
+          <spam className="letters"> </spam>
+          <spam className="letters">M</spam>
+          <spam className="letters">i</spam>
+          <spam className="letters">s</spam>
+          <spam className="letters">i</spam>
+          <spam className="letters">m</spam>
+          <spam className="letters">i</spam>
+        </h2>
         <ul>
           <li className="nav-links">
             <a href="#">Projects</a>
